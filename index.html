@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhat Jana | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed top-0 w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-xl tracking-tight text-indigo-600">PJ.</a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm">
+                <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
+                <a href="#experience" class="hover:text-indigo-600 transition">Experience</a>
+                <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 p-4 space-y-4">
+            <a href="#about" class="block">About</a>
+            <a href="#skills" class="block">Skills</a>
+            <a href="#projects" class="block">Projects</a>
+            <a href="#contact" class="block">Contact</a>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl ring-4 ring-indigo-50">
+                <img id="profile-pic" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=500" alt="Prabhat Jana" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-4">Prabhat Jana</h1>
+                <h2 class="text-xl md:text-2xl text-indigo-600 font-semibold mb-6">Aspiring Software Engineer</h2>
+                <p class="text-slate-600 text-lg leading-relaxed max-w-2xl mb-8">
+                    1+ years of experience building cross-platform mobile apps using Flutter, Dart, and REST APIs. Passionate about clean architecture, automation, and delivering scalable solutions.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#contact" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Get in Touch</a>
+                    <a id="github-link" href="https://github.com/iamthetwodigiter" target="_blank" class="bg-white border border-slate-200 px-8 py-3 rounded-full font-semibold hover:border-indigo-600 transition flex items-center gap-2">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-12 text-center">About Me</h3>
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        I am currently pursuing my B.Tech in Information Technology at Meghnad Saha Institute of Technology, Kolkata (CGPA: 7.84). My journey in software development is fueled by a track record of winning hackathons and building real-world applications.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        I specialize in the Flutter ecosystem, emphasizing modular code and efficient state management. I've successfully mentored juniors and led development teams for campus-wide events.
+                    </p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h4 class="font-bold mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap text-indigo-600"></i> Education
+                    </h4>
+                    <p class="font-semibold text-slate-800">Meghnad Saha Institute of Technology</p>
+                    <p class="text-sm text-slate-500 mb-2">B.Tech in Information Technology | 2022 - 2026</p>
+                    <p class="text-sm text-slate-600 italic">Relevant Coursework: Data Structures, Algorithms, OS, Computer Architecture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold mb-12 text-center">Technical Arsenal</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-white rounded-xl border border-slate-100 shadow-sm">
+                    <h4 class="font-bold text-indigo-600 mb-4">Languages</h4>
+                    <ul class="space-y-2 text-slate-600 font-medium">
+                        <li>Dart</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-slate-100 shadow-sm">
+                    <h4 class="font-bold text-indigo-600 mb-4">Frameworks</h4>
+                    <ul class="space-y-2 text-slate-600 font-medium">
+                        <li>Flutter</li>
+                        <li>Flask</li>
+                        <li>FastAPI</li>
+                        <li>Riverpod / Provider</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-slate-100 shadow-sm">
+                    <h4 class="font-bold text-indigo-600 mb-4">Cloud & DB</h4>
+                    <ul class="space-y-2 text-slate-600 font-medium">
+                        <li>Firebase</li>
+                        <li>Firestore</li>
+                        <li>Hive</li>
+                        <li>Vercel / Netlify</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-slate-100 shadow-sm">
+                    <h4 class="font-bold text-indigo-600 mb-4">Tools</h4>
+                    <ul class="space-y-2 text-slate-600 font-medium">
+                        <li>Docker</li>
+                        <li>Git / GitHub</li>
+                        <li>GitHub Actions</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold mb-12 text-center">Featured Projects</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group card-hover bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+                    <div class="h-48 bg-indigo-600 flex items-center justify-center p-8">
+                        <i class="fa-solid fa-music text-white text-6xl opacity-20"></i>
+                        <span class="absolute text-white font-bold text-2xl">Melodia</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="font-bold text-xl">Melodia</h4>
+                            <span class="text-xs font-bold bg-green-100 text-green-700 px-2 py-1 rounded">640+ Downloads</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Music streaming app with offline caching, lyrics display, and dynamic theming using YouTube API.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] uppercase tracking-wider font-bold bg-slate-200 px-2 py-1 rounded">Flutter</span>
+                            <span class="text-[10px] uppercase tracking-wider font-bold bg-slate-200 px-2 py-1 rounded">Hive</span>
+                            <span class="text-[10px] uppercase tracking-wider font-bold bg-slate-200 px-2 py-1 rounded">Riverpod</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group card-hover bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center p-8">
+                        <i class="fa-solid fa-calendar-check text-white text-6xl opacity-20"></i>
+                        <span class="absolute text-white font-bold text-2xl">Megatronix</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="font-bold text-xl">Megatronix App</h4>
+                            <span class="text-xs font-bold bg-green-100 text-green-700 px-2 py-1 rounded">500+ Downloads</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Event registration platform for Paridhi 2025 with JWT auth and real-time push notifications.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] uppercase tracking-wider font-bold bg-slate-200 px-2 py-1 rounded">Dart</span>
+                            <span class="text-[10px] uppercase tracking-wider font-bold bg-slate-200 px-2 py-1 rounded">REST API</span>
+                            <span class="text-[10px] uppercase tracking-wider font-bold bg-slate-200 px-2 py-1 rounded">JWT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group card-hover bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+                    <div class="h-48 bg-indigo-400 flex items-center justify-center p-8">
+                        <i class="fa-solid fa-terminal text-white text-6xl opacity-20"></i>
+                        <span class="absolute text-white font-bold text-2xl">FF Forge</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="font-bold text-xl">FlutterFlowForge</h4>
+                            <span class="text-xs font-bold bg-indigo-100 text-indigo-700 px-2 py-1 rounded">CLI Tool</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Developer CLI tool to automate build pipelines and deployment, reducing post-dev time.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] uppercase tracking-wider font-bold bg-slate-200 px-2 py-1 rounded">Python</span>
+                            <span class="text-[10px] uppercase tracking-wider font-bold bg-slate-200 px-2 py-1 rounded">CI/CD</span>
+                            <span class="text-[10px] uppercase tracking-wider font-bold bg-slate-200 px-2 py-1 rounded">GitHub Actions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold mb-12 text-center">Experience & Honors</h3>
+            <div class="space-y-8">
+                <div class="relative pl-8 border-l-2 border-indigo-200">
+                    <div class="absolute w-4 h-4 bg-indigo-600 rounded-full -left-[9px] top-1"></div>
+                    <h4 class="text-xl font-bold">Mobile App Developer</h4>
+                    <p class="text-indigo-600 font-medium mb-2">Megatronix — MSIT | Aug 2023 - Present</p>
+                    <ul class="text-slate-600 list-disc list-inside space-y-1">
+                        <li>Led design/development for Megatronix Club & Paridhi 2025 event apps.</li>
+                        <li>Collaborated with UI/UX teams for Material-compliant accessible interfaces.</li>
+                    </ul>
+                </div>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100 flex items-center gap-4">
+                        <div class="w-10 h-10 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-sm">1st Place - 360 CodeCraft 2025</p>
+                            <p class="text-xs text-slate-500 italic">IEM Hackathon Winner</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100 flex items-center gap-4">
+                        <div class="w-10 h-10 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-sm">3rd Place - Campus Solution Hackathon</p>
+                            <p class="text-xs text-slate-500 italic">TINT 2025</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100 flex items-center gap-4">
+                        <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-sm">1st Place Competitive Coding</p>
+                            <p class="text-xs text-slate-500 italic">TechXtra & Paridhi 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-900 text-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6">Let's Connect</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        I am always open to discussing mobile development, open-source projects, or potential opportunities. Based in Kolkata, available for remote work globally.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-envelope text-indigo-400 w-6"></i>
+                            <span>iamthetwodigiter@gmail.com</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-phone text-indigo-400 w-6"></i>
+                            <span>+91 9800297679</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-location-dot text-indigo-400 w-6"></i>
+                            <span>Kolkata, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-2xl">
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" class="w-full bg-slate-700 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 transition outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" class="w-full bg-slate-700 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 transition outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea rows="4" class="w-full bg-slate-700 border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 transition outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 py-3 rounded-lg font-bold transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-slate-500 text-sm border-t border-slate-800 bg-slate-900">
+        <p>&copy; 2025 Prabhat Jana. Built with Tailwind CSS & Flutter Passion.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const githubUser = 'iamthetwodigiter';
+            const profilePic = document.getElementById('profile-pic');
+            const fallbackPic = 'https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=500';
+            
+            // Try fetching GitHub Profile
+            fetch(`https://api.github.com/users/${githubUser}`)
+                .then(response => {
+                    if (response.ok) return response.json();
+                    throw new Error('User not found');
+                })
+                .then(data => {
+                    if (data.avatar_url) {
+                        profilePic.src = data.avatar_url;
+                    }
+                })
+                .catch(() => {
+                    // If API fails, try direct PNG shortcut
+                    profilePic.src = `https://github.com/${githubUser}.png`;
+                    profilePic.onerror = () => {
+                        profilePic.src = fallbackPic;
+                    }
+                });
+        });
+    </script>
+</body>
+</html>
